@@ -1,4 +1,4 @@
 /Users/stefaniscott/Desktop/UNIVERSIDAD/Proyectos/pis/2025-control-1-parte-a1/src/main/java/es/upm/grise/profundizacion/cruiseControl/CruiseControl.java
-/Users/stefaniscott/Desktop/UNIVERSIDAD/Proyectos/pis/2025-control-1-parte-a1/src/main/java/es/upm/grise/profundizacion/cruiseControl/IncorrectSpeedLimitException.java
+/Users/stefaniscott/Desktop/UNIVERSIDAD/Proyectos/pis/2025-control-1-parte-a1/src/main/java/es/upm/grise/profundizacion/cruiseControl/IncorrectSpeedSetException.java
 /Users/stefaniscott/Desktop/UNIVERSIDAD/Proyectos/pis/2025-control-1-parte-a1/src/main/java/es/upm/grise/profundizacion/cruiseControl/SpeedSetAboveSpeedLimitException.java
 /Users/stefaniscott/Desktop/UNIVERSIDAD/Proyectos/pis/2025-control-1-parte-a1/src/main/java/es/upm/grise/profundizacion/cruiseControl/Speedometer.java

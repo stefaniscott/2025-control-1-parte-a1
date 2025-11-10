@@ -1,6 +1,6 @@
 package es.upm.grise.profundizacion.cruiseControl;
 
-import es.upm.grise.profundizacion.cruiseControl.IncorrectSpeedLimitException;
+import es.upm.grise.profundizacion.cruiseControl.IncorrectSpeedSetException;
 import es.upm.grise.profundizacion.cruiseControl.SpeedSetAboveSpeedLimitException;
 
 public class CruiseControl {
@@ -24,18 +24,18 @@ public class CruiseControl {
 	/*
 	 * Method to code
 	 */
-	public void setSpeedSet(int speedSet) throws IncorrectSpeedLimitException, SpeedSetAboveSpeedLimitException {
+	public void setSpeedSet(int speedSet) throws IncorrectSpeedSetException, SpeedSetAboveSpeedLimitException {
 		//velocidad a mantener proporcionada por user
 		
-		if (speedSet > 0 ){
-			if (speedLimit != null && speedSet < speedLimit){
-				this.speedSet = speedSet;
-			}else {
-				throw new SpeedSetAboveSpeedLimitException("La velocidad no debe sobrepasar el límite de velocidad establecido.");
-			}	
-		}else{
-			throw new IncorrectSpeedLimitException("La velocidad tiene que ser mayor que cero." );
+		if (speedSet <= 0 ){
+			throw new IncorrectSpeedSetException("La velocidad tiene que ser mayor que cero." );
 		}
+
+		if (speedLimit!= null && speedSet > speedLimit){
+			throw new SpeedSetAboveSpeedLimitException("La velocidad no debe sobrepasar el límite de velocidad establecido.");	
+		}
+
+		this.speedSet = speedSet;
 		
 	}
 
